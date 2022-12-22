@@ -1,0 +1,28 @@
+package encapsulamento;
+
+public class ContaCorrente extends ContaBancaria {
+	private float limite;
+
+	public ContaCorrente(int numero, int agencia, String tipo, String titular, float saldo, float limite) {
+		super();
+		this.limite = limite;
+	}
+
+	public float getLimite() {
+		return limite;
+	}
+
+	public void setLimite(float limite) {
+		this.limite = limite;
+	}
+
+	@Override
+	public boolean sacar(float valor) {
+		if(this.getSaldo() + this.getLimite() < valor) {
+			System.out.println("\n Saldo insuficiente!");
+			return false;
+		}
+		this.setSaldo(this.getSaldo()-valor);
+		return true;
+	}
+}

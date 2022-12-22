@@ -1,0 +1,22 @@
+package contabancaria;
+
+public class TesteContaBancaria {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ContaBancaria novaConta = new ContaBancaria(12, 65, 2, "Carol", 1200f);
+		
+		System.out.println("Numero da Conta  "+ novaConta.getNumero());
+		System.out.println("Numero da Agencia "+ novaConta.getAgencia());
+		System.out.println("Numero do Tipo "+ novaConta.getTipo());
+		System.out.println("Numero da Titular "+ novaConta.getTitular());
+		System.out.println("Numero da Saldo "+ novaConta.getSaldo());
+		
+		novaConta.sacar(20000);
+		
+		
+		
+	}
+
+}

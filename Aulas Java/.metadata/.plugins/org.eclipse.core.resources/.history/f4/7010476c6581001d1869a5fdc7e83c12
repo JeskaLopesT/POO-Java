@@ -1,0 +1,13 @@
+package encapsulamento;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ContaCorrente contaCorrente1 = 
+				new ContaCorrente(32,33,"Conta Corrente","Tadeu",4000.0f, 3000.0f);
+		
+		
+	}
+
+}

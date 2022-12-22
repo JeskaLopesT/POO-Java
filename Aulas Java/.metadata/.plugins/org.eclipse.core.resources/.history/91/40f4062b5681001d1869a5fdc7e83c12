@@ -1,0 +1,17 @@
+package encapsulamento;
+
+public class ContaPoupança extends ContaBancaria {
+
+	public int aniversario;
+	public ContaPoupança() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public int getAniversario() {
+		return aniversario;
+	}
+	public void setAniversario(int aniversario) {
+		this.aniversario = aniversario;
+	}
+	
+}

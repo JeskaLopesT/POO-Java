@@ -1,0 +1,22 @@
+package encapsulamento;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ContaBancaria conta1 = new ContaBancaria();
+		
+		conta1.setNumero(99);
+		conta1.setNumero(0202);
+		conta1.setTipo("Corrente");
+		conta1.setTitular("Jessica");
+		conta1.setSaldo(10000);
+		
+		System.out.println(conta1.getNumero());
+		System.out.println(conta1.getNumero());
+		System.out.println(conta1.getNumero());
+		System.out.println(conta1.getNumero());
+	}
+
+}

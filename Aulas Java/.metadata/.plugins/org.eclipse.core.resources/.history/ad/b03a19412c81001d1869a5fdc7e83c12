@@ -1,0 +1,12 @@
+package encapsulamento;
+
+public class ContaCorrente extends ContaBancaria {
+	private float limite;
+
+	public ContaCorrente(int numero, int agencia, String tipo, String titular, float saldo, float limite) {
+		super(numero, agencia, tipo, titular, saldo);
+		this.limite = limite;
+	}
+
+	
+}

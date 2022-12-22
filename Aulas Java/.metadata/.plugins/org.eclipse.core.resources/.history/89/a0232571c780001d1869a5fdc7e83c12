@@ -1,0 +1,19 @@
+package encapsulamento;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		
+		ContaBancaria conta1 = new ContaBancaria();
+		
+		conta1.setNumero(1296);
+		conta1.setAgencia(000);
+		conta1.setTipo("Corrente");
+		conta1.setTitular("Jessica");
+		conta1.setSaldo(10000);
+		
+		System.out.println(conta1.getAgencia());
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package encapsulamento;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ContaCorrente conta1 = new ContaCorrente(32, 22, "Conta Corrente", "Tadeu", 4000.0f, 4000.0f);
+		
+		System.out.println("Saldo inicial " + conta1.getSaldo());
+		conta1.sacar(50000);
+		System.out.println("Saldo pós saque " + conta1.getSaldo());
+	}
+}
